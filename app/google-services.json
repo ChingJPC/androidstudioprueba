@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "653997936064",
+    "project_id": "typo-prueba",
+    "storage_bucket": "typo-prueba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653997936064:android:44d10bd3677491629a8c25",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjS3ZDsS7MCw2fAotadzwyOLM5uk9MicQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

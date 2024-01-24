@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="341dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:background="#A888F2FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="246dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+        android:layout_width="302dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="252dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/btnmotivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="motivo"
+            android:text="Motivo" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bro2"
+            android:text="Volver" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="377dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#18B2EF"
+        android:stateListAnimator="@android:anim/accelerate_decelerate_interpolator"
+        android:text="TYPO"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="207dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#4EC7F8"
+        android:onClick="bro"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="@+id/clave"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/clave"
+        app:layout_constraintTop_toBottomOf="@+id/clave" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="135dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#4EC7F8"
+        android:onClick="login"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="@+id/clave"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/clave"
+        app:layout_constraintTop_toBottomOf="@+id/clave" />
+
+    <EditText
+        android:id="@+id/clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
