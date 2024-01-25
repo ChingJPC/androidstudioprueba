@@ -19,7 +19,6 @@ public class MainActivity2 extends AppCompatActivity {
     }
     public void motivo (View view){
         startActivity(new Intent(this, IndexActivity.class));
-        finish();
     }
 
 
