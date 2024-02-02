@@ -1,13 +1,12 @@
 package com.example.myapplication;
 
+import com.example.myapplication.model.Ficha;
 import com.example.myapplication.model.Motivo;
+import com.example.myapplication.model.RespuestaLogin;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Datainfo {
-    public static ArrayList<Motivo> datos = new ArrayList<>(Arrays.asList(new Motivo[]{
-            new Motivo("Salud"),
-            new Motivo("Trabajo"),
-            new Motivo("Calamidad")}));
+    public static RespuestaLogin respuestaLogin = null;
 }

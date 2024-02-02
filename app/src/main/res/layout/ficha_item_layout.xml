@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/material_dynamic_neutral70">
+
+        <TextView
+            android:id="@+id/txtid"
+            android:layout_width="443dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textColor="#46BFF6"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtnumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/txtid"
+            app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+        <TextView
+            android:id="@+id/txtprograma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="68dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/txtid"
+            app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+        <TextView
+            android:id="@+id/txtlider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="116dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/txtid"
+            app:layout_constraintTop_toBottomOf="@+id/txtid" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

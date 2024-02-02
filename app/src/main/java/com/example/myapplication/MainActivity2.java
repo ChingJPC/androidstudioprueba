@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.myapplication.motivo.IndexActivity;
+import com.example.myapplication.motivo.IndexFichaActivity;
+import com.example.myapplication.motivo.ListFichaActivity;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -17,8 +19,14 @@ public class MainActivity2 extends AppCompatActivity {
         startActivity(new Intent(this,MainActivity.class));
         finish();
     }
+    public void ficha (View view){
+        startActivity(new Intent(this, IndexFichaActivity.class));
+    }
     public void motivo (View view){
         startActivity(new Intent(this, IndexActivity.class));
+    }
+    public void gomotivotoken (View view){
+        startActivity(new Intent(this, ListFichaActivity.class));
     }
 
 

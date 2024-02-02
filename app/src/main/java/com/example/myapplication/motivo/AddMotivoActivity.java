@@ -50,9 +50,7 @@ public class AddMotivoActivity extends AppCompatActivity {
                     Toast.makeText(AddMotivoActivity.this, "Error al crear el motivo", Toast.LENGTH_SHORT).show();
                 }
             });
-            //Datainfo.datos.add(new Motivo(value));
-            //finish();
-            //return;
+
         }
     }
     }

@@ -1,24 +1,20 @@
 package com.example.myapplication.network;
 
-import com.example.myapplication.model.Ficha;
-import com.example.myapplication.model.Motivo;
-
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class FichaAPIClient {
+public class LoginAPIClient {
     private static final String URL = "http://10.201.194.60:8000/api/";
 
-    private static FichaAPIService instance;
-
-    public static FichaAPIService getFichaInstance(){
+    private static LoginAPIService instance;
+    public static LoginAPIService getLoginService(){
         if(instance==null){
-            Retrofit retro = new Retrofit.Builder()
+            Retrofit http = new Retrofit.Builder()
                     .baseUrl(URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
-            instance = retro.create(FichaAPIService.class);
-        }
+            instance = http.create(LoginAPIService.class);
+    }
         return instance;
     }
 }
